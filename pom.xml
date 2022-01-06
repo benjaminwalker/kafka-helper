@@ -10,7 +10,8 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>kafka-connect-helper</module>
-        <module>kafka-connect-manager</module>
+        <module>kafka-manager</module>
+        <module>kafka-rest-proxy-helper</module>
     </modules>
 
     <properties>
