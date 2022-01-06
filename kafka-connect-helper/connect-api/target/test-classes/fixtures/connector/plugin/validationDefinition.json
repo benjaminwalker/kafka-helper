@@ -1,0 +1,1 @@
+{"type":  "s3Sink","required":  false, "default_value": "defaultValue","importance":  "high","documentation":  "something","group": "aGroup","width":  "slim","display_name":  "S3Sink","dependents":  ["none"],"order":  0}
