@@ -14,12 +14,11 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <kotlin.version>1.5.30</kotlin.version>
+        <kotlin.version>1.5.10</kotlin.version>
         <kotlin.code.style>official</kotlin.code.style>
 
         <kotlinx.coroutines.core>1.5.1</kotlinx.coroutines.core>
         <arrow-kt.version>0.13.2</arrow-kt.version>
-
 
         <jersey.client>3.0.2</jersey.client>
         <log4j>2.11.2</log4j>
@@ -92,14 +91,16 @@
         </dependency>
 
 
-<!--        <dependency>-->
-<!--            <groupId>com.fasterxml.jackson.jaxrs</groupId>-->
-<!--            <artifactId>jackson-jaxrs-json-provider</artifactId>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>com.fasterxml.jackson.jaxrs</groupId>
+            <artifactId>jackson-jaxrs-json-provider</artifactId>
+<!--            <version>${}</version>-->
+        </dependency>
 
         <dependency>
             <groupId>org.glassfish.jersey.media</groupId>
             <artifactId>jersey-media-json-jackson</artifactId>
+            <version>${jersey.client}</version>
         </dependency>
 
         <dependency>

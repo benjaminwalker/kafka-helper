@@ -1,1 +1,0 @@
-{"name":  "testConnectorName", "type":  "s3Sink","config":  {"a":  "b"}, "tasks":  [{"connector":  "testConnectorName", "task":  0},{"connector":  "testConnectorName", "task":  1}]}

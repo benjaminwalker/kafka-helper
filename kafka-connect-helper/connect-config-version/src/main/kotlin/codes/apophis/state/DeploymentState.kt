@@ -6,11 +6,11 @@ enum class DeploymentState {
     FAILED,
     SUCCESS;
 
-    fun nextState() : DeploymentState {
-        when(this) {
-            REQUESTED -> return PROCESSING
-            PROCESSING -> return SUCCESS
-        }
-    }
+//    fun nextState() : DeploymentState {
+//        when(this) {
+//            REQUESTED -> return PROCESSING
+//            PROCESSING -> return SUCCESS
+//        }
+//    }
 
 }

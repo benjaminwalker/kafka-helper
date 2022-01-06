@@ -19,7 +19,7 @@
         <kotlin.code.style>official</kotlin.code.style>
         <kotlin.compiler.jvmTarget>1.8</kotlin.compiler.jvmTarget>
 
-        <jackson>2.12.4</jackson>
+        <jackson>2.13.1</jackson>
     </properties>
 
     <dependencyManagement>

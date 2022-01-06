@@ -14,11 +14,11 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <name>codes.apophis connect-versioned-config</name>
+    <name>connect-versioned-config</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <kotlin.version>1.5.30</kotlin.version>
+        <kotlin.version>1.5.10</kotlin.version>
         <kotlin.code.style>official</kotlin.code.style>
     </properties>
 
