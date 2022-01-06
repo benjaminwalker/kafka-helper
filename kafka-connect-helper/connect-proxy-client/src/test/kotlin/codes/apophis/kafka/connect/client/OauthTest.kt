@@ -4,8 +4,8 @@ import com.fasterxml.jackson.databind.ObjectMapper
 import com.google.common.io.Resources
 import io.mockk.*
 import io.mockk.impl.annotations.SpyK
-import jakarta.ws.rs.core.MediaType
-import jakarta.ws.rs.core.Response
+import javax.ws.rs.core.MediaType
+import javax.ws.rs.core.Response
 import org.junit.jupiter.api.*
 import java.io.IOException
 import java.nio.charset.StandardCharsets

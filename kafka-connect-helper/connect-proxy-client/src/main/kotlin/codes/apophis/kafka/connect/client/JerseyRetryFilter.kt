@@ -1,6 +1,6 @@
 package codes.apophis.kafka.connect.client
 
-import jakarta.ws.rs.core.Response
+import javax.ws.rs.core.Response
 
 interface JerseyRetryFilter {
 

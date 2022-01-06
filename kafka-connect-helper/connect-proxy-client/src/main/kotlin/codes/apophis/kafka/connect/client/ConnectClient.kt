@@ -10,18 +10,26 @@ import codes.apophis.kafka.connect.api.dto.connector.plugin.Plugin
 import codes.apophis.kafka.connect.api.dto.connector.plugin.ValidationResponse
 import codes.apophis.kafka.connect.api.dto.task.DeployedTask
 import codes.apophis.kafka.connect.api.dto.task.WorkerTask
+//import jakarta.json.spi.JsonProvider
 import com.fasterxml.jackson.jaxrs.json.JacksonJsonProvider
-import jakarta.ws.rs.client.Client
-import jakarta.ws.rs.client.ClientBuilder
-import jakarta.ws.rs.client.Entity
-import jakarta.ws.rs.core.GenericType
-import jakarta.ws.rs.core.MediaType
-import jakarta.ws.rs.core.Response
+//import jakarta.ws.rs.client.Client
+//import jakarta.ws.rs.client.ClientBuilder
+//import jakarta.ws.rs.client.Entity
+//import jakarta.ws.rs.core.GenericType
+//import jakarta.ws.rs.core.MediaType
+//import jakarta.ws.rs.core.Response
 
 import org.glassfish.jersey.client.ClientConfig
+//import org.glassfish.jersey.moxy.json.MoxyJsonConfig
 
 import java.net.URI
 import java.util.concurrent.atomic.AtomicReference
+import javax.ws.rs.client.Client
+import javax.ws.rs.client.ClientBuilder
+import javax.ws.rs.client.Entity
+import javax.ws.rs.core.GenericType
+import javax.ws.rs.core.MediaType
+import javax.ws.rs.core.Response
 
 class ConnectClient(
     client: Client,
@@ -238,6 +246,7 @@ class ConnectClient(
                     client = ClientBuilder.newClient(
                         ClientConfig()
                             .register(JacksonJsonProvider())
+                        //final MoxyJsonConfig moxyJsonConfig = new MoxyJsonConfig();
 //                            .register((ClientRequestFilter) requestContext ->{})
                     ),
                     oauth2Client = null,

@@ -20,8 +20,8 @@
         <kotlinx.coroutines.core>1.5.1</kotlinx.coroutines.core>
         <arrow-kt.version>0.13.2</arrow-kt.version>
 
-        <jersey.client>3.0.2</jersey.client>
-        <log4j>2.11.2</log4j>
+        <jersey.client>2.35</jersey.client>
+        <log4j>2.17.1</log4j>
         <google.http.client>1.39.0</google.http.client>
         <testcontainers>1.15.2</testcontainers>
     </properties>
@@ -82,6 +82,18 @@
             <version>${jersey.client}</version>
         </dependency>
 
+<!--        <dependency>-->
+<!--            <groupId>org.glassfish.jersey.media</groupId>-->
+<!--            <artifactId>jersey-media-moxy</artifactId>-->
+<!--            <version>${jersey.client}</version>-->
+<!--        </dependency>-->
+
+<!--        <dependency>-->
+<!--            <groupId>org.glassfish.jersey.media</groupId>-->
+<!--            <artifactId>jersey-media-json-jackson</artifactId>-->
+<!--            <version>${jersey.client}</version>-->
+<!--        </dependency>-->
+
         <!-- Google HTTP Client for exponential backoff -->
         <!-- https://mvnrepository.com/artifact/com.google.http-client/google-http-client -->
         <dependency>
@@ -98,22 +110,35 @@
         </dependency>
 
         <dependency>
-            <groupId>org.glassfish.jersey.media</groupId>
-            <artifactId>jersey-media-json-jackson</artifactId>
-            <version>${jersey.client}</version>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+<!--            <version>${jackson}</version>-->
         </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.glassfish.jersey.media</groupId>-->
+<!--            <artifactId>jersey-media-json-jackson</artifactId>-->
+<!--            <version>${jersey.client}</version>-->
+<!--        </dependency>-->
 
-        <dependency>
-            <groupId>javax.ws.rs</groupId>
-            <artifactId>jsr311-api</artifactId>
-            <version>1.1.1</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>javax.ws.rs</groupId>-->
+<!--            <artifactId>jsr311-api</artifactId>-->
+<!--            <version>1.1.1</version>-->
+<!--        </dependency>-->
 
-        <dependency>
-            <groupId>jakarta.activation</groupId>
-            <artifactId>jakarta.activation-api</artifactId>
-            <version>2.0.1</version>
-        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.jakarta.rs/jackson-jakarta-rs-json-provider -->
+<!--        <dependency>-->
+<!--            <groupId>com.fasterxml.jackson.jakarta.rs</groupId>-->
+<!--            <artifactId>jackson-jakarta-rs-json-provider</artifactId>-->
+<!--            <version>2.13.1</version>-->
+<!--        </dependency>-->
+
+
+<!--        <dependency>-->
+<!--            <groupId>jakarta.activation</groupId>-->
+<!--            <artifactId>jakarta.activation-api</artifactId>-->
+<!--            <version>2.0.1</version>-->
+<!--        </dependency>-->
         <!-- Logging -->
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>

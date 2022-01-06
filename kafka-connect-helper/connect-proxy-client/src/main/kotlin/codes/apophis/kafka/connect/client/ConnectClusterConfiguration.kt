@@ -3,10 +3,11 @@ package codes.apophis.kafka.connect.client
 import arrow.core.Either
 import arrow.core.computations.either
 import com.google.common.io.Resources
-import jakarta.ws.rs.core.UriBuilder
+//import jakarta.ws.rs.core.UriBuilder
 import java.io.FileNotFoundException
 import java.net.URI
 import java.util.*
+import javax.ws.rs.core.UriBuilder
 
 /**
  * Currently only has an endpoint URI for the kafka connect cluster as a property

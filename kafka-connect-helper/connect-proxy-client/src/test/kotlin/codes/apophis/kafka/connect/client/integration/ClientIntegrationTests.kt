@@ -2,8 +2,8 @@ package codes.apophis.kafka.connect.client.integration
 
 import codes.apophis.kafka.connect.api.dto.connector.CreateConnectorRequest
 import codes.apophis.kafka.connect.client.Logging
-import jakarta.ws.rs.NotFoundException
-import jakarta.ws.rs.WebApplicationException
+import javax.ws.rs.NotFoundException
+import javax.ws.rs.WebApplicationException
 import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.DisplayName
 import org.junit.jupiter.api.Test

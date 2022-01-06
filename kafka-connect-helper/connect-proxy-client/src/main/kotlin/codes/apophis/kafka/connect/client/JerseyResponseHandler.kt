@@ -4,11 +4,11 @@ import arrow.core.Either
 import arrow.core.computations.either
 import arrow.core.rightIfNotNull
 import com.google.api.client.util.ExponentialBackOff
-import jakarta.ws.rs.BadRequestException
-import jakarta.ws.rs.WebApplicationException
-import jakarta.ws.rs.core.Response
-import jakarta.ws.rs.core.Response.Status.Family.CLIENT_ERROR
-import jakarta.ws.rs.core.Response.Status.Family.SERVER_ERROR
+import javax.ws.rs.BadRequestException
+import javax.ws.rs.WebApplicationException
+import javax.ws.rs.core.Response
+import javax.ws.rs.core.Response.Status.Family.CLIENT_ERROR
+import javax.ws.rs.core.Response.Status.Family.SERVER_ERROR
 import java.util.concurrent.TimeUnit
 
 interface JerseyResponseHandler : Logging {
